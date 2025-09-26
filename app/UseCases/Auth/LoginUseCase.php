@@ -2,7 +2,7 @@
 
 namespace App\UseCases\Auth;
 
-use App\Services\AuthService;
+use App\Services\Auth\AuthService;
 
 class LoginUseCase
 {

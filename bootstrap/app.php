@@ -19,7 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->group('api', [
             ApiLoggerMiddleware::class,
-            // EnsureFrontendRequestsAreStateful::class,
+            EnsureFrontendRequestsAreStateful::class,
             // 'throttle:api',
             SubstituteBindings::class,
         ]);
